@@ -143,9 +143,9 @@
       <td>Sent to Google. See <a href="#ads">Advertising</a>.</td>
     </tr>
     <tr>
-      <td><strong>Connection data on the server</strong> (time, your IP address, destination, account identifier, data volume)</td>
-      <td>Created by the VPN server when you connect</td>
-      <td>Kept on the server. See <a href="#vpn">VPN service and your traffic</a>.</td>
+      <td><strong>Standard server security records</strong> (for example, SSH sign-in time and IP address kept by the server&rsquo;s operating system)</td>
+      <td>Created by the server&rsquo;s operating system when you sign in</td>
+      <td>Kept on the server and removed by automatic log rotation. Our VPN software does not keep access logs. See <a href="#vpn">VPN service and your traffic</a>.</td>
     </tr>
   </tbody>
 </table>
@@ -157,8 +157,8 @@
 <ul>
   <li>The App itself does not read, store or analyze the content of your traffic or the websites and apps you use.</li>
   <li>Your traffic is sent to the server in the protocol you selected and is then forwarded to its destination. The operator of that server can technically see connection metadata, such as your IP address, connection times and the destination addresses requested.</li>
-  <li>The servers operated for this App keep standard <strong>access logs</strong> so the service can run, be fixed when it breaks, and be protected from abuse. These logs may contain: connection time, your IP address, the destination host and port, an account identifier (such as a UUID), and data volume. They do not contain the content of the pages or messages you send.</li>
-  <li>Access logs are kept for no longer than 30 days and are then deleted.</li>
+  <li>The VPN software on the servers operated for this App is set <strong>not to keep access logs</strong>. We do not keep a record of the websites or services you connect to through the VPN.</li>
+  <li>Like any server, the operating system may keep standard security and system records, such as the time and IP address of an SSH sign-in. These are used only to keep the server secure and working, are not used for any other purpose, and are deleted by the operating system&rsquo;s automatic log rotation.</li>
   <li>If you load a configuration that points to a server run by someone else, that server&rsquo;s operator is responsible for its own data practices. Only connect to servers you trust.</li>
 </ul>
 
@@ -205,7 +205,7 @@
 <h2 id="retention"><span class="n">8</span>Retention and deletion</h2>
 <ul>
   <li><strong>On your device:</strong> credentials, settings, configuration and time balance stay until you clear the App&rsquo;s data or uninstall it. Doing so deletes all of it and resets your time balance.</li>
-  <li><strong>On our servers:</strong> access logs are deleted after no more than 30 days.</li>
+  <li><strong>On our servers:</strong> the VPN software keeps no access logs. Standard operating-system security records are removed by automatic log rotation.</li>
   <li><strong>Advertising data:</strong> held by Google under its own policy.</li>
 </ul>
 <p>To ask us to delete server-side data linked to your account identifier, email <a href="mailto:noelrubios1201@gmail.com">noelrubios1201@gmail.com</a>.</p>
